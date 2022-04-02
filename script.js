@@ -13,6 +13,10 @@
             if(hour==t.getHours() && mins == t.getMinutes() && seconds == t.getSeconds()){
                 d.play();
                 alert("wakeup");
+                document.getElementById("alert").innerHTML=(`<div class="alert alert-danger alert-dismissible" role="alert">
+                This is a danger dismissible alert — check it out!
+                <button type="button" id="clear" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>`)
                 };
             setTimeout("setAlarm()",5000);
            
@@ -36,3 +40,7 @@
             
            
         }
+
+        document.getAnimations("clear").addEventListener("click",function(){
+            document.getElementById("alert").innerHTML=""
+        })
