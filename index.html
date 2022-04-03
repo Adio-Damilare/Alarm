@@ -24,7 +24,7 @@
 <body>
     <div id="background">
         <div>
-                <table id="tab" border="" align="center" class="table table-bordered  text-center border-5 table-reponsive  my-5 w-25 table-hover table-info table-striped"  >
+                <table id="tab" border="" align="center" class="table table-bordered  text-center border-5 table-reponsive  my-5 w-100 table-hover table-info table-striped"  >
                     <tr align="center">
                         <th colspan="5" class="display-6">
                             Premium Alarm system
@@ -32,14 +32,28 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" onkeypress="damilare()" class="btn-outline-warning" name="" id="hr" placeholder="Hour">
+
+                            <div id="inputholder">
+                                
+                                <input type="text"  name="" id="hr" placeholder="H">:
+                            
+                            
+                                <input type="text" name="" id="min" placeholder="M">
+                                :
+                            
+                            
+                                <input type="text" name="" id="sec" placeholder="S">
+                            </div>
+                            <div id="error">
+
+                            </div>
                         </td>
-                        <td>
-                            <input type="text" name="" id="min" placeholder="minutes">
+                        <td colspan="2">
+                            
+                              <textarea class="form-control" name="" id="textarea" rows="2" placeholder="leave some text here" ></textarea>
+                            
                         </td>
-                        <td>
-                            <input type="text" name="" id="sec" placeholder="second">
-                        </td>
+                        
                     </tr>
                     <tr align="center"> 
                         <td colspan="2">
@@ -63,6 +77,7 @@
     </div>
 
     
-    
+
+   
 </body>
 </html>
