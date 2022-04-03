@@ -35,7 +35,7 @@ td{
     width: 100%;
 }
 
-#min,#sec,#hr{
+#minute,#sec,#hr{
     width: 30px;
     outline: none;
     background-color:transparent;
